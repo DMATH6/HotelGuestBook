@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1698645300 source:f:\hotelbooking2\hotelbooking\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+
+1698411959 
+
+1698411959 source:/media/oem/drive/HotelBooking2/HotelBooking/main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+
+1699437951 source:/media/oem/drive/HotelBooking2/HotelBooking/main.cpp
+	"defHeaders.h"
+	"clientData.h"
+
+1699276855 /media/oem/drive/HotelBooking2/HotelBooking/defHeaders.h
+	<iostream>
+	<vector>
+	<fstream>
+	<bits/stdc++.h>
+
+1699437988 /media/oem/drive/HotelBooking2/HotelBooking/clientData.h
+	"defHeaders.h"
+
