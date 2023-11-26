@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="HGBUI" />
+		<Option title="HotelGuestBookingGui" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/HGBUI" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/HotelGuestBookingGui" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
@@ -17,7 +17,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/HGBUI" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/HotelGuestBookingGui" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
@@ -37,9 +37,19 @@
 		<Linker>
 			<Add option="`wx-config --libs`" />
 		</Linker>
-		<Unit filename="UImain.cpp" />
+		<Unit filename="HotelGuestBookingGuiApp.cpp" />
+		<Unit filename="HotelGuestBookingGuiApp.h" />
+		<Unit filename="HotelGuestBookingGuiMain.cpp" />
+		<Unit filename="HotelGuestBookingGuiMain.h" />
+		<Unit filename="wxsmith/HotelGuestBookingGuidialog.wxs" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="HotelGuestBookingGuiApp.cpp" main="HotelGuestBookingGuiDialog" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxDialog wxs="wxsmith/HotelGuestBookingGuidialog.wxs" src="HotelGuestBookingGuiMain.cpp" hdr="HotelGuestBookingGuiMain.h" fwddecl="0" i18n="1" name="HotelGuestBookingGuiDialog" language="CPP" />
+				</resources>
+			</wxsmith>
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
