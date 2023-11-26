@@ -21,6 +21,7 @@
 					<object class="sizeritem">
 						<object class="wxButton" name="ID_BUTTON1" variable="viewGuestsButton" member="yes">
 							<label>View Guests</label>
+							<handler function="OnviewGuestsButtonClick" entry="EVT_BUTTON" />
 						</object>
 						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
@@ -50,100 +51,6 @@
 			</object>
 			<object class="sizeritem">
 				<object class="wxListBox" name="ID_LISTBOX1" variable="outputGuestListBox" member="yes">
-					<content>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-						<item>Test</item>
-					</content>
 					<default>-1</default>
 					<size>465,386</size>
 				</object>

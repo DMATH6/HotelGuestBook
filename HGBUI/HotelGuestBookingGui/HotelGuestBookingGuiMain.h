@@ -30,6 +30,7 @@ class HotelGuestBookingGuiDialog: public wxDialog
         //(*Handlers(HotelGuestBookingGuiDialog)
         void OnQuit(wxCommandEvent& event);
         void OnAbout(wxCommandEvent& event);
+        void OnviewGuestsButtonClick(wxCommandEvent& event);
         //*)
 
         //(*Identifiers(HotelGuestBookingGuiDialog)

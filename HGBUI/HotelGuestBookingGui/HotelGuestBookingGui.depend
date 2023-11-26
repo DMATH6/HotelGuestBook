@@ -580,7 +580,7 @@
 
 1648163323 /usr/include/wx-3.0/wx/gtk/app.h
 
-1700979878 /home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/HotelGuestBookingGuiMain.h
+1700984307 /home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/HotelGuestBookingGuiMain.h
 	<wx/button.h>
 	<wx/dialog.h>
 	<wx/listbox.h>
@@ -946,9 +946,10 @@
 
 1648163323 /usr/include/wx-3.0/wx/gtk/stattext.h
 
-1700979891 source:/home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/HotelGuestBookingGuiMain.cpp
+1700984946 source:/home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/HotelGuestBookingGuiMain.cpp
 	"HotelGuestBookingGuiMain.h"
 	<wx/msgdlg.h>
+	"Functions.h"
 	<wx/intl.h>
 	<wx/string.h>
 
@@ -1006,4 +1007,23 @@
 1648163323 /usr/include/wx-3.0/wx/generic/splitter.h
 	"wx/window.h"
 	"wx/containr.h"
+
+1700980260 source:/home/oem/Documents/GitHub/HotelGuestBook/main.cpp
+	"defHeaders.h"
+	"clientData.h"
+
+1699610219 /home/oem/Documents/GitHub/HotelGuestBook/defHeaders.h
+	<iostream>
+	<vector>
+	<fstream>
+	<bits/stdc++.h>
+
+1699610219 /home/oem/Documents/GitHub/HotelGuestBook/clientData.h
+	"defHeaders.h"
+
+1700985070 /home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/Functions.h
+	<iostream>
+	<vector>
+	<fstream>
+	<bits/stdc++.h>
 

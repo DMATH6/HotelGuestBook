@@ -37,6 +37,7 @@
 		<Linker>
 			<Add option="`wx-config --libs`" />
 		</Linker>
+		<Unit filename="Functions.h" />
 		<Unit filename="HotelGuestBookingGuiApp.cpp" />
 		<Unit filename="HotelGuestBookingGuiApp.h" />
 		<Unit filename="HotelGuestBookingGuiMain.cpp" />

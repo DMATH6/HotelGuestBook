@@ -9,6 +9,7 @@
 
 #include "HotelGuestBookingGuiMain.h"
 #include <wx/msgdlg.h>
+#include "Functions.h"
 
 //(*InternalHeaders(HotelGuestBookingGuiDialog)
 #include <wx/intl.h>
@@ -75,104 +76,13 @@ HotelGuestBookingGuiDialog::HotelGuestBookingGuiDialog(wxWindow* parent,wxWindow
     buttonHolderGridSizer->Add(quitButton, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     FlexGridSizer1->Add(buttonHolderGridSizer, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     outputGuestListBox = new wxListBox(this, ID_LISTBOX1, wxDefaultPosition, wxSize(465,386), 0, 0, 0, wxDefaultValidator, _T("ID_LISTBOX1"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
-    outputGuestListBox->Append(_("Test"));
     FlexGridSizer1->Add(outputGuestListBox, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     SetSizer(FlexGridSizer1);
     FlexGridSizer1->Fit(this);
     FlexGridSizer1->SetSizeHints(this);
     Center();
 
+    Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&HotelGuestBookingGuiDialog::OnviewGuestsButtonClick);
     Connect(ID_BUTTON3,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&HotelGuestBookingGuiDialog::OnQuit);
     //*)
 }
@@ -192,4 +102,20 @@ void HotelGuestBookingGuiDialog::OnAbout(wxCommandEvent& event)
 {
     wxString msg = wxbuildinfo(long_f);
     wxMessageBox(msg, _("Welcome to..."));
+}
+
+void HotelGuestBookingGuiDialog::OnviewGuestsButtonClick(wxCommandEvent& event)
+{
+
+    wstring listStringOutput{};
+    ReadWriteGuestDataFile(true);
+
+    for (int i=0; ClientData_v.size() < i; i++)
+    {
+    string stlstring = ClientData_v[i].firstName;
+    listStringOutput(stlstring);
+    outputGuestListBox->Append(listStringOutput);
+    }
+
+
 }

@@ -6,9 +6,27 @@
 -void ReadWriteGuestDataFile(bool writeData) 'Multi part function that can read data and write to a file'
 */
 
-#include "defHeaders.h"
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <bits/stdc++.h>
 
-#include "clientData.h"
+
+
+using namespace std;
+
+class ClientData_c {
+
+  public: string objectName = "client data container object";
+
+  string firstName {};
+  string lastName {};
+  string phoneNumber {};
+  string roomNumber {};
+  int guestIdNumber {};
+};
+vector < ClientData_c > ClientData_v; //Top level to cut down on complexity
+
 
 using namespace std;
 
@@ -31,7 +49,7 @@ auto CreateGuest(bool createFromFile) {
   return (ClientData_i);
 }
 
-void ReadWriteGuestDataFile(bool writeData) {
+auto ReadWriteGuestDataFile(bool writeData) {
   char separator = ',';
   fstream outGuestbook;
   outGuestbook.open("guestBook.csv", ios::app);
@@ -81,13 +99,13 @@ void ReadWriteGuestDataFile(bool writeData) {
       }
       readGuestbook.close();
       //prints out all data from objects client_v
-      for (int i {}; i < ClientData_v.size(); i++) {
+      /*for (int i {}; i < ClientData_v.size(); i++) {
         cout << ClientData_v[i].firstName << "  " << ClientData_v[i].lastName << "  " << ClientData_v[i].guestIdNumber << "  " << ClientData_v[i].phoneNumber << endl;
-      }
+      }*/
     }
 
   }
-
+return (ClientData_v);
 }
 
 void MainLoop() {
@@ -121,3 +139,4 @@ int mainConsole() {
   MainLoop();
   return 0;
 }
+
