@@ -1027,3 +1027,31 @@
 	<fstream>
 	<bits/stdc++.h>
 
+1701001034 source:c:\users\dylan\desktop\git\hotelguestbook\hgbui\hotelguestbookinggui\hotelguestbookingguiapp.cpp
+	"HotelGuestBookingGuiApp.h"
+	"HotelGuestBookingGuiMain.h"
+	<wx/image.h>
+
+1701001034 c:\users\dylan\desktop\git\hotelguestbook\hgbui\hotelguestbookinggui\hotelguestbookingguiapp.h
+	<wx/app.h>
+
+1701001034 c:\users\dylan\desktop\git\hotelguestbook\hgbui\hotelguestbookinggui\hotelguestbookingguimain.h
+	<wx/button.h>
+	<wx/dialog.h>
+	<wx/listbox.h>
+	<wx/sizer.h>
+	<wx/splitter.h>
+
+1701001034 source:c:\users\dylan\desktop\git\hotelguestbook\hgbui\hotelguestbookinggui\hotelguestbookingguimain.cpp
+	"HotelGuestBookingGuiMain.h"
+	<wx/msgdlg.h>
+	"Functions.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1701001034 c:\users\dylan\desktop\git\hotelguestbook\hgbui\hotelguestbookinggui\functions.h
+	<iostream>
+	<vector>
+	<fstream>
+	<bits/stdc++.h>
+
