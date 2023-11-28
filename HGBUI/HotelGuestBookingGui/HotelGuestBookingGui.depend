@@ -580,7 +580,7 @@
 
 1648163323 /usr/include/wx-3.0/wx/gtk/app.h
 
-1700984307 /home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/HotelGuestBookingGuiMain.h
+1701090741 /home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/HotelGuestBookingGuiMain.h
 	<wx/button.h>
 	<wx/dialog.h>
 	<wx/listbox.h>
@@ -946,7 +946,7 @@
 
 1648163323 /usr/include/wx-3.0/wx/gtk/stattext.h
 
-1700984946 source:/home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/HotelGuestBookingGuiMain.cpp
+1701090831 source:/home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/HotelGuestBookingGuiMain.cpp
 	"HotelGuestBookingGuiMain.h"
 	<wx/msgdlg.h>
 	"Functions.h"
@@ -1026,4 +1026,276 @@
 	<vector>
 	<fstream>
 	<bits/stdc++.h>
+
+1648163323 /usr/include/wx-3.0/wx/choicdlg.h
+	"wx/defs.h"
+	"wx/generic/choicdgg.h"
+
+1648163323 /usr/include/wx-3.0/wx/generic/choicdgg.h
+	"wx/dynarray.h"
+	"wx/dialog.h"
+
+1648163323 /usr/include/wx-3.0/wx/panel.h
+	"wx/window.h"
+	"wx/containr.h"
+	"wx/univ/panel.h"
+	"wx/msw/panel.h"
+	"wx/generic/panelg.h"
+
+1648163323 /usr/include/wx-3.0/wx/generic/panelg.h
+	"wx/bitmap.h"
+
+1648163323 /usr/include/wx-3.0/wx/richtext/richtextctrl.h
+	"wx/richtext/richtextbuffer.h"
+	"wx/scrolwin.h"
+	"wx/caret.h"
+	"wx/textctrl.h"
+	"wx/dnd.h"
+
+1648163323 /usr/include/wx-3.0/wx/richtext/richtextbuffer.h
+	"wx/defs.h"
+	"wx/list.h"
+	"wx/textctrl.h"
+	"wx/bitmap.h"
+	"wx/image.h"
+	"wx/cmdproc.h"
+	"wx/txtstrm.h"
+	"wx/variant.h"
+	"wx/position.h"
+	"wx/dataobj.h"
+
+1648163323 /usr/include/wx-3.0/wx/textctrl.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/textentry.h"
+	"wx/dynarray.h"
+	"wx/gdicmn.h"
+	"wx/ioswrap.h"
+	"wx/x11/textctrl.h"
+	"wx/univ/textctrl.h"
+	"wx/msw/wince/textctrlce.h"
+	"wx/msw/textctrl.h"
+	"wx/motif/textctrl.h"
+	"wx/gtk/textctrl.h"
+	"wx/gtk1/textctrl.h"
+	"wx/osx/textctrl.h"
+	"wx/cocoa/textctrl.h"
+	"wx/os2/textctrl.h"
+
+1648163323 /usr/include/wx-3.0/wx/textentry.h
+	"wx/filefn.h"
+	"wx/gdicmn.h"
+	"wx/gtk/textentry.h"
+	"wx/osx/textentry.h"
+	"wx/msw/textentry.h"
+	"wx/motif/textentry.h"
+	"wx/os2/textentry.h"
+
+1648163323 /usr/include/wx-3.0/wx/gtk/textentry.h
+
+1648163323 /usr/include/wx-3.0/wx/ioswrap.h
+	"wx/beforestd.h"
+	<iostream.h>
+	<iostream>
+	"wx/afterstd.h"
+	"wx/msw/winundef.h"
+
+1648163323 /usr/include/wx-3.0/wx/gtk/textctrl.h
+
+1648163323 /usr/include/wx-3.0/wx/cmdproc.h
+	"wx/defs.h"
+	"wx/object.h"
+	"wx/list.h"
+
+1648163323 /usr/include/wx-3.0/wx/txtstrm.h
+	"wx/stream.h"
+	"wx/convauto.h"
+
+1648163323 /usr/include/wx-3.0/wx/convauto.h
+	"wx/strconv.h"
+	"wx/fontenc.h"
+
+1648163323 /usr/include/wx-3.0/wx/position.h
+	"wx/gdicmn.h"
+
+1648163323 /usr/include/wx-3.0/wx/dataobj.h
+	"wx/defs.h"
+	"wx/string.h"
+	"wx/bitmap.h"
+	"wx/list.h"
+	"wx/arrstr.h"
+	"wx/msw/ole/dataform.h"
+	"wx/motif/dataform.h"
+	"wx/gtk/dataform.h"
+	"wx/gtk1/dataform.h"
+	"wx/x11/dataform.h"
+	"wx/osx/dataform.h"
+	"wx/cocoa/dataform.h"
+	"wx/os2/dataform.h"
+	"wx/msw/ole/dataobj.h"
+	"wx/motif/dataobj.h"
+	"wx/x11/dataobj.h"
+	"wx/gtk/dataobj.h"
+	"wx/gtk1/dataobj.h"
+	"wx/osx/dataobj.h"
+	"wx/cocoa/dataobj.h"
+	"wx/os2/dataobj.h"
+	"wx/msw/ole/dataobj2.h"
+	"wx/gtk/dataobj2.h"
+	"wx/gtk1/dataobj2.h"
+	"wx/x11/dataobj2.h"
+	"wx/motif/dataobj2.h"
+	"wx/osx/dataobj2.h"
+	"wx/cocoa/dataobj2.h"
+	"wx/os2/dataobj2.h"
+
+1648163323 /usr/include/wx-3.0/wx/gtk/dataform.h
+
+1648163323 /usr/include/wx-3.0/wx/gtk/dataobj.h
+
+1648163323 /usr/include/wx-3.0/wx/gtk/dataobj2.h
+
+1648163323 /usr/include/wx-3.0/wx/scrolwin.h
+	"wx/panel.h"
+	"wx/gtk/scrolwin.h"
+	"wx/gtk1/scrolwin.h"
+	"wx/generic/scrolwin.h"
+
+1648163323 /usr/include/wx-3.0/wx/gtk/scrolwin.h
+
+1648163323 /usr/include/wx-3.0/wx/generic/scrolwin.h
+
+1648163323 /usr/include/wx-3.0/wx/caret.h
+	"wx/defs.h"
+	"wx/gdicmn.h"
+	"wx/msw/caret.h"
+	"wx/generic/caret.h"
+
+1648163323 /usr/include/wx-3.0/wx/generic/caret.h
+	"wx/timer.h"
+	"wx/dc.h"
+	"wx/overlay.h"
+
+1648163323 /usr/include/wx-3.0/wx/timer.h
+	"wx/defs.h"
+	"wx/object.h"
+	"wx/longlong.h"
+	"wx/event.h"
+	"wx/stopwatch.h"
+	"wx/utils.h"
+
+1648163323 /usr/include/wx-3.0/wx/stopwatch.h
+	"wx/defs.h"
+	"wx/longlong.h"
+	"wx/time.h"
+
+1648163323 /usr/include/wx-3.0/wx/time.h
+	"wx/longlong.h"
+
+1648163323 /usr/include/wx-3.0/wx/dc.h
+	"wx/object.h"
+	"wx/intl.h"
+	"wx/cursor.h"
+	"wx/font.h"
+	"wx/colour.h"
+	"wx/bitmap.h"
+	"wx/brush.h"
+	"wx/pen.h"
+	"wx/palette.h"
+	"wx/dynarray.h"
+	"wx/math.h"
+	"wx/image.h"
+	"wx/region.h"
+	"wx/affinematrix2d.h"
+
+1648163323 /usr/include/wx-3.0/wx/brush.h
+	"wx/defs.h"
+	"wx/object.h"
+	"wx/gdiobj.h"
+	"wx/gdicmn.h"
+	"wx/msw/brush.h"
+	"wx/x11/brush.h"
+	"wx/gtk/brush.h"
+	"wx/gtk1/brush.h"
+	"wx/dfb/brush.h"
+	"wx/osx/brush.h"
+	"wx/cocoa/brush.h"
+	"wx/os2/brush.h"
+
+1648163323 /usr/include/wx-3.0/wx/gtk/brush.h
+
+1648163323 /usr/include/wx-3.0/wx/pen.h
+	"wx/gdiobj.h"
+	"wx/gdicmn.h"
+	"wx/msw/pen.h"
+	"wx/x11/pen.h"
+	"wx/gtk/pen.h"
+	"wx/gtk1/pen.h"
+	"wx/dfb/pen.h"
+	"wx/osx/pen.h"
+	"wx/cocoa/pen.h"
+	"wx/os2/pen.h"
+
+1648163323 /usr/include/wx-3.0/wx/gtk/pen.h
+
+1648163323 /usr/include/wx-3.0/wx/affinematrix2d.h
+	"wx/defs.h"
+	"wx/affinematrix2dbase.h"
+
+1648163323 /usr/include/wx-3.0/wx/affinematrix2dbase.h
+	"wx/defs.h"
+	"wx/geometry.h"
+
+1648163323 /usr/include/wx-3.0/wx/geometry.h
+	"wx/defs.h"
+	"wx/utils.h"
+	"wx/gdicmn.h"
+	"wx/math.h"
+
+1648163323 /usr/include/wx-3.0/wx/overlay.h
+	"wx/defs.h"
+
+1648163323 /usr/include/wx-3.0/wx/dnd.h
+	"wx/defs.h"
+	"wx/dataobj.h"
+	"wx/cursor.h"
+	"wx/msw/ole/dropsrc.h"
+	"wx/msw/ole/droptgt.h"
+	"wx/motif/dnd.h"
+	"wx/x11/dnd.h"
+	"wx/gtk/dnd.h"
+	"wx/gtk1/dnd.h"
+	"wx/osx/dnd.h"
+	"wx/os2/dnd.h"
+
+1648163323 /usr/include/wx-3.0/wx/gtk/dnd.h
+	"wx/icon.h"
+
+1701090891 source:/home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/AddGuestDiag.cpp
+	"AddGuestDiag.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1701090888 /home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/AddGuestDiag.h
+	<wx/animate.h>
+	<wx/dialog.h>
+	<wx/sizer.h>
+
+1648163323 /usr/include/wx-3.0/wx/animate.h
+	"wx/defs.h"
+	"wx/animdecod.h"
+	"wx/control.h"
+	"wx/timer.h"
+	"wx/bitmap.h"
+	"wx/gtk/animate.h"
+	"wx/generic/animate.h"
+
+1648163323 /usr/include/wx-3.0/wx/animdecod.h
+	"wx/defs.h"
+	"wx/colour.h"
+	"wx/gdicmn.h"
+	"wx/log.h"
+	"wx/stream.h"
+
+1648163323 /usr/include/wx-3.0/wx/gtk/animate.h
 

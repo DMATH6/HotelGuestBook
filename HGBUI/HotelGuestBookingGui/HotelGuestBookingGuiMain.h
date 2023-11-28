@@ -31,6 +31,7 @@ class HotelGuestBookingGuiDialog: public wxDialog
         void OnQuit(wxCommandEvent& event);
         void OnAbout(wxCommandEvent& event);
         void OnviewGuestsButtonClick(wxCommandEvent& event);
+        void OnaddGuestsButtonClick(wxCommandEvent& event);
         //*)
 
         //(*Identifiers(HotelGuestBookingGuiDialog)

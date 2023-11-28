@@ -37,11 +37,14 @@
 		<Linker>
 			<Add option="`wx-config --libs`" />
 		</Linker>
+		<Unit filename="AddGuestDiag.cpp" />
+		<Unit filename="AddGuestDiag.h" />
 		<Unit filename="Functions.h" />
 		<Unit filename="HotelGuestBookingGuiApp.cpp" />
 		<Unit filename="HotelGuestBookingGuiApp.h" />
 		<Unit filename="HotelGuestBookingGuiMain.cpp" />
 		<Unit filename="HotelGuestBookingGuiMain.h" />
+		<Unit filename="wxsmith/AddGuestDiag.wxs" />
 		<Unit filename="wxsmith/HotelGuestBookingGuidialog.wxs" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
@@ -49,6 +52,7 @@
 				<gui name="wxWidgets" src="HotelGuestBookingGuiApp.cpp" main="HotelGuestBookingGuiDialog" init_handlers="necessary" language="CPP" />
 				<resources>
 					<wxDialog wxs="wxsmith/HotelGuestBookingGuidialog.wxs" src="HotelGuestBookingGuiMain.cpp" hdr="HotelGuestBookingGuiMain.h" fwddecl="0" i18n="1" name="HotelGuestBookingGuiDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/AddGuestDiag.wxs" src="AddGuestDiag.cpp" hdr="AddGuestDiag.h" fwddecl="0" i18n="1" name="AddGuestDiag" language="CPP" />
 				</resources>
 			</wxsmith>
 		</Extensions>

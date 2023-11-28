@@ -83,6 +83,7 @@ HotelGuestBookingGuiDialog::HotelGuestBookingGuiDialog(wxWindow* parent,wxWindow
     Center();
 
     Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&HotelGuestBookingGuiDialog::OnviewGuestsButtonClick);
+    Connect(ID_BUTTON2,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&HotelGuestBookingGuiDialog::OnaddGuestsButtonClick);
     Connect(ID_BUTTON3,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&HotelGuestBookingGuiDialog::OnQuit);
     //*)
 }
@@ -107,15 +108,19 @@ void HotelGuestBookingGuiDialog::OnAbout(wxCommandEvent& event)
 void HotelGuestBookingGuiDialog::OnviewGuestsButtonClick(wxCommandEvent& event)
 {
 
-    wstring listStringOutput{};
+    //wstring listStringOutput = "null";
     ReadWriteGuestDataFile(true);
 
     for (int i=0; ClientData_v.size() < i; i++)
     {
     string stlstring = ClientData_v[i].firstName;
-    listStringOutput(stlstring);
-    outputGuestListBox->Append(listStringOutput);
+    outputGuestListBox->Append(stlstring);
     }
 
+
+}
+
+void HotelGuestBookingGuiDialog::OnaddGuestsButtonClick(wxCommandEvent& event)
+{
 
 }
