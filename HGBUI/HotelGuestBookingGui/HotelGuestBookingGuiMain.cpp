@@ -10,6 +10,7 @@
 #include "HotelGuestBookingGuiMain.h"
 #include <wx/msgdlg.h>
 #include "Functions.h"
+#include "AddGuestDiag.h"
 
 //(*InternalHeaders(HotelGuestBookingGuiDialog)
 #include <wx/intl.h>
@@ -122,5 +123,12 @@ void HotelGuestBookingGuiDialog::OnviewGuestsButtonClick(wxCommandEvent& event)
 
 void HotelGuestBookingGuiDialog::OnaddGuestsButtonClick(wxCommandEvent& event)
 {
+    AddGuestDiag* dlg = new AddGuestDiag(this);
 
+    if (dlg->ShowModal() == wxID_OK)
+    {
+//do your stuff here
+    }
+
+  dlg->Destroy();
 }

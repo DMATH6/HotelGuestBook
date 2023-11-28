@@ -946,10 +946,11 @@
 
 1648163323 /usr/include/wx-3.0/wx/gtk/stattext.h
 
-1701090831 source:/home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/HotelGuestBookingGuiMain.cpp
+1701176633 source:/home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/HotelGuestBookingGuiMain.cpp
 	"HotelGuestBookingGuiMain.h"
 	<wx/msgdlg.h>
 	"Functions.h"
+	"AddGuestDiag.h"
 	<wx/intl.h>
 	<wx/string.h>
 
@@ -1271,15 +1272,16 @@
 1648163323 /usr/include/wx-3.0/wx/gtk/dnd.h
 	"wx/icon.h"
 
-1701090891 source:/home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/AddGuestDiag.cpp
+1701149292 source:/home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/AddGuestDiag.cpp
 	"AddGuestDiag.h"
 	<wx/intl.h>
 	<wx/string.h>
 
-1701090888 /home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/AddGuestDiag.h
-	<wx/animate.h>
+1701098494 /home/oem/Documents/GitHub/HotelGuestBook/HGBUI/HotelGuestBookingGui/AddGuestDiag.h
+	<wx/button.h>
 	<wx/dialog.h>
 	<wx/sizer.h>
+	<wx/textctrl.h>
 
 1648163323 /usr/include/wx-3.0/wx/animate.h
 	"wx/defs.h"

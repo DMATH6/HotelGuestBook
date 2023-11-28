@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <wxsmith>
 	<object class="wxDialog" name="AddGuestDiag">
-		<size>309,176</size>
 		<id_arg>0</id_arg>
 		<object class="wxGridSizer" variable="GridSizer1" member="no">
 			<rows>5</rows>
 			<object class="sizeritem">
-				<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl1" member="yes">
+				<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="FirstNameTextC" member="yes">
 					<value>Enter firstname</value>
 					<size>200,50</size>
 				</object>
@@ -15,7 +14,7 @@
 				<option>1</option>
 			</object>
 			<object class="sizeritem">
-				<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="TextCtrl2" member="yes">
+				<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="LastNAmeTextC" member="yes">
 					<value>Enter last name</value>
 					<size>200,50</size>
 				</object>
@@ -24,7 +23,7 @@
 				<option>1</option>
 			</object>
 			<object class="sizeritem">
-				<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="TextCtrl3" member="yes">
+				<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="PhoneNumTextCntrl" member="yes">
 					<value>Enter phone number</value>
 					<size>200,50</size>
 				</object>
@@ -33,9 +32,8 @@
 				<option>1</option>
 			</object>
 			<object class="sizeritem">
-				<object class="wxButton" name="ID_BUTTON2" variable="Button1" member="yes">
+				<object class="wxButton" name="ID_BUTTON2" variable="OkAddButton" member="yes">
 					<label>Add Guest</label>
-					<hidden>1</hidden>
 				</object>
 				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 				<border>5</border>

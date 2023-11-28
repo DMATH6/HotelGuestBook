@@ -17,10 +17,10 @@ class AddGuestDiag: public wxDialog
 
 		//(*Declarations(AddGuestDiag)
 		wxButton* BackToMainMenuButton;
-		wxButton* Button1;
-		wxTextCtrl* TextCtrl1;
-		wxTextCtrl* TextCtrl2;
-		wxTextCtrl* TextCtrl3;
+		wxButton* OkAddButton;
+		wxTextCtrl* FirstNameTextC;
+		wxTextCtrl* LastNAmeTextC;
+		wxTextCtrl* PhoneNumTextCntrl;
 		//*)
 
 	protected:
