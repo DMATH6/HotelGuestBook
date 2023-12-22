@@ -10,6 +10,7 @@
 #ifndef HOTELGUESTBOOKINGGUIMAIN_H
 #define HOTELGUESTBOOKINGGUIMAIN_H
 
+
 //(*Headers(HotelGuestBookingGuiDialog)
 #include <wx/button.h>
 #include <wx/dialog.h>

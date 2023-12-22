@@ -19,7 +19,7 @@ class AddGuestDiag: public wxDialog
 		wxButton* BackToMainMenuButton;
 		wxButton* OkAddButton;
 		wxTextCtrl* FirstNameTextC;
-		wxTextCtrl* LastNAmeTextC;
+		wxTextCtrl* LastNameTextC;
 		wxTextCtrl* PhoneNumTextCntrl;
 		//*)
 
@@ -37,6 +37,8 @@ class AddGuestDiag: public wxDialog
 
 		//(*Handlers(AddGuestDiag)
 		void OnRadioBox1Select(wxCommandEvent& event);
+		void OnBackToMainMenuButtonClick(wxCommandEvent& event);
+		void OnOkAddButtonClick(wxCommandEvent& event);
 		//*)
 
 		DECLARE_EVENT_TABLE()

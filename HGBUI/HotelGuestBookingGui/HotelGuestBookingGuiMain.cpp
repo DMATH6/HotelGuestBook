@@ -6,10 +6,10 @@
  * Copyright: Dylan Matheson ()
  * License:
  **************************************************************/
+using namespace std;
 
 #include "HotelGuestBookingGuiMain.h"
 #include <wx/msgdlg.h>
-#include "Functions.h"
 #include "AddGuestDiag.h"
 
 //(*InternalHeaders(HotelGuestBookingGuiDialog)
@@ -17,9 +17,12 @@
 #include <wx/string.h>
 //*)
 
+
+
 //helper functions
 enum wxbuildinfoformat {
     short_f, long_f };
+
 
 wxString wxbuildinfo(wxbuildinfoformat format)
 {
@@ -50,6 +53,38 @@ const long HotelGuestBookingGuiDialog::ID_BUTTON2 = wxNewId();
 const long HotelGuestBookingGuiDialog::ID_BUTTON3 = wxNewId();
 const long HotelGuestBookingGuiDialog::ID_LISTBOX1 = wxNewId();
 //*)
+
+class ClientData_c {
+
+  public: string objectName = "client data container object";
+
+  string firstName {};
+  string lastName {};
+  string phoneNumber {};
+  string roomNumber {};
+  int guestIdNumber {};
+};
+wxVector < ClientData_c > ClientData_v; //Top level to cut down on complexity
+
+ClientData_c CreateGuest(bool createFromFile) {
+  ClientData_c ClientData_i;
+
+  cout << "\n-------------------------------------------------------------------------------------\n";
+
+  cout << "\nPlease Enter First Name:\n" << endl;
+  cin >> ClientData_i.firstName;
+  cout << "\nPlease Enter Last Name:\n" << endl;
+  cin >> ClientData_i.lastName;
+  cout << "\nGenerateing Guest ID...." << endl;
+  cout << "\nPlease Enter Phone Number:\n" << endl;
+  cin >> ClientData_i.phoneNumber;
+  cout << "\n-------------------------------------------------------------------------------------\n";
+  ClientData_i.guestIdNumber = rand();
+  cout << ClientData_i.firstName << ClientData_i.lastName << ClientData_i.guestIdNumber << ClientData_i.phoneNumber << endl;
+
+  return (ClientData_i);
+}
+
 
 BEGIN_EVENT_TABLE(HotelGuestBookingGuiDialog,wxDialog)
     //(*EventTable(HotelGuestBookingGuiDialog)
@@ -110,7 +145,7 @@ void HotelGuestBookingGuiDialog::OnviewGuestsButtonClick(wxCommandEvent& event)
 {
 
     //wstring listStringOutput = "null";
-    ReadWriteGuestDataFile(true);
+
 
     for (int i=0; ClientData_v.size() < i; i++)
     {

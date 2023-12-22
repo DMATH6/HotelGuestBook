@@ -39,11 +39,13 @@
 		</Linker>
 		<Unit filename="AddGuestDiag.cpp" />
 		<Unit filename="AddGuestDiag.h" />
+		<Unit filename="AddGuestFile.h" />
 		<Unit filename="Functions.h" />
 		<Unit filename="HotelGuestBookingGuiApp.cpp" />
 		<Unit filename="HotelGuestBookingGuiApp.h" />
 		<Unit filename="HotelGuestBookingGuiMain.cpp" />
 		<Unit filename="HotelGuestBookingGuiMain.h" />
+		<Unit filename="ViewGuestFile.h" />
 		<Unit filename="wxsmith/AddGuestDiag.wxs" />
 		<Unit filename="wxsmith/HotelGuestBookingGuidialog.wxs" />
 		<Extensions>

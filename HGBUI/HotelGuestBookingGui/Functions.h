@@ -25,12 +25,12 @@ class ClientData_c {
   string roomNumber {};
   int guestIdNumber {};
 };
-vector < ClientData_c > ClientData_v; //Top level to cut down on complexity
+extern vector < ClientData_c > ClientData_v; //Top level to cut down on complexity
 
 
 using namespace std;
 
-auto CreateGuest(bool createFromFile) {
+ClientData_c CreateGuest(bool createFromFile) {
   ClientData_c ClientData_i;
 
   cout << "\n-------------------------------------------------------------------------------------\n";
@@ -49,7 +49,7 @@ auto CreateGuest(bool createFromFile) {
   return (ClientData_i);
 }
 
-auto ReadWriteGuestDataFile(bool writeData) {
+inline auto ReadWriteGuestDataFile(bool writeData) {
   char separator = ',';
   fstream outGuestbook;
   outGuestbook.open("guestBook.csv", ios::app);
@@ -108,7 +108,7 @@ auto ReadWriteGuestDataFile(bool writeData) {
 return (ClientData_v);
 }
 
-void MainLoop() {
+/*void MainLoop() {
 
   int options {};
   cout << "\n==============================================================\n";
@@ -117,7 +117,7 @@ void MainLoop() {
 
   switch (options) {
   case 1:
-    ClientData_v.push_back(CreateGuest(false));
+    //ClientData_v.push_back(CreateGuest(false));
     ReadWriteGuestDataFile(true);
     ClientData_v.clear();
     MainLoop();
@@ -138,5 +138,6 @@ int mainConsole() {
 
   MainLoop();
   return 0;
-}
+} */
+
 

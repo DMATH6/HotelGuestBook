@@ -8,7 +8,7 @@
  **************************************************************/
 
 #include "HotelGuestBookingGuiApp.h"
-
+//#include "Functions.h"
 //(*AppHeaders
 #include "HotelGuestBookingGuiMain.h"
 #include <wx/image.h>
@@ -18,6 +18,7 @@ IMPLEMENT_APP(HotelGuestBookingGuiApp);
 
 bool HotelGuestBookingGuiApp::OnInit()
 {
+    //ReadWriteGuestDataFile(true);
     //(*AppInitialize
     bool wxsOK = true;
     wxInitAllImageHandlers();
