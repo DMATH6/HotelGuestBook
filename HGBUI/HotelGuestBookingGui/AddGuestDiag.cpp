@@ -1,8 +1,12 @@
 #include "AddGuestDiag.h"
 #include "HotelGuestBookingGui/HotelGuestBookingGuiMain.h"
-
-
-
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <bits/stdc++.h>
+using namespace std;
+//extern vector < ClientData_c > ClientData_v; //Top level to cut down on complexity
+  ofstream outGuestbook;
 //#include "Functions.h"
 
 //(*InternalHeaders(AddGuestDiag)
@@ -73,7 +77,21 @@ void AddGuestDiag::OnOkAddButtonClick(wxCommandEvent& event)
     std::string firstNameStr = FirstNameTextC->GetValue().ToStdString();
     std::string lastNameStr = LastNameTextC->GetValue().ToStdString();
     std::string phoneNumStr = PhoneNumTextCntrl->GetValue().ToStdString();
+char separator = ',';
 
-    //FirstNameTextC::GetValue();//ReadWriteGuestDataFile(true);
-}
+    outGuestbook.open("guestBook.csv", fstream::app);
+
+    outGuestbook << firstNameStr << ','<<lastNameStr << ',' << phoneNumStr << endl;
+
+    outGuestbook.close();
+
+    FirstNameTextC->Clear();
+    LastNameTextC->Clear();
+    PhoneNumTextCntrl->Clear();
+
+
+    }
+
+
+
 
