@@ -112,7 +112,7 @@ HotelGuestBookingGuiDialog::HotelGuestBookingGuiDialog(wxWindow* parent,wxWindow
     buttonHolderGridSizer->Add(quitButton, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     FlexGridSizer1->Add(buttonHolderGridSizer, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     outputGuestListBox = new wxListBox(this, ID_LISTBOX1, wxDefaultPosition, wxSize(465,386), 0, 0, 0, wxDefaultValidator, _T("ID_LISTBOX1"));
-
+    outputGuestListBox->Append(_("test"));
     FlexGridSizer1->Add(outputGuestListBox, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     SetSizer(FlexGridSizer1);
     FlexGridSizer1->Fit(this);
@@ -154,21 +154,29 @@ string GuestDataOutputString;
 string firstName;
 string lastName;
 string phoneNumber;
+string passerString;
 char seperator = ',';
-for (int x = 2; x>! 0; x--){
+std::string unused;
+int numLines;
+outputGuestListBox->Clear();
+while (getline(readGuestbook, unused, ';') )
 
-for (int i = 3; i >! 0; i--){
-
+{
+/*
         getline(readGuestbook, firstName, ',');
         getline(readGuestbook, lastName, ',');
-        getline(readGuestbook, phoneNumber, '/');
-        GuestDataOutputString = firstName + " " + lastName + " " + phoneNumber + "\n";
-        outputGuestListBox->Append(_(GuestDataOutputString));
-        GuestDataOutputString = " ";
-}
-}
+        getline(readGuestbook, phoneNumber,';');
+        //getline(readGuestbook, endLine, '/'); */
 
-//outputGuestListBox->Set("");
+                //GuestDataOutputString = firstName + " " + lastName + " " + phoneNumber;
+                GuestDataOutputString = unused;
+                //GuestDataOutputString = unused.replace (unused.begin(), unused.end(), ',' , ' ');
+        outputGuestListBox->Append(_(GuestDataOutputString));
+        //GuestDataOutputString = "";
+}
+unused = "";
+
+
 }
 
 void HotelGuestBookingGuiDialog::OnaddGuestsButtonClick(wxCommandEvent& event)
