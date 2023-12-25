@@ -11,7 +11,7 @@ using namespace std;
 #include "HotelGuestBookingGuiMain.h"
 #include <wx/msgdlg.h>
 #include "AddGuestDiag.h"
-
+#include <fstream>
 //(*InternalHeaders(HotelGuestBookingGuiDialog)
 #include <wx/intl.h>
 #include <wx/string.h>
@@ -112,6 +112,7 @@ HotelGuestBookingGuiDialog::HotelGuestBookingGuiDialog(wxWindow* parent,wxWindow
     buttonHolderGridSizer->Add(quitButton, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     FlexGridSizer1->Add(buttonHolderGridSizer, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     outputGuestListBox = new wxListBox(this, ID_LISTBOX1, wxDefaultPosition, wxSize(465,386), 0, 0, 0, wxDefaultValidator, _T("ID_LISTBOX1"));
+
     FlexGridSizer1->Add(outputGuestListBox, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     SetSizer(FlexGridSizer1);
     FlexGridSizer1->Fit(this);
@@ -144,16 +145,30 @@ void HotelGuestBookingGuiDialog::OnAbout(wxCommandEvent& event)
 void HotelGuestBookingGuiDialog::OnviewGuestsButtonClick(wxCommandEvent& event)
 {
 
-    //wstring listStringOutput = "null";
+ifstream readGuestbook;
 
 
-    for (int i=0; ClientData_v.size() < i; i++)
-    {
-    string stlstring = ClientData_v[i].firstName;
-    outputGuestListBox->Append(stlstring);
-    }
 
+readGuestbook.open("guestBook.csv", ios::in);
+string GuestDataOutputString;
+string firstName;
+string lastName;
+string phoneNumber;
+char seperator = ',';
+for (int x = 2; x>! 0; x--){
 
+for (int i = 3; i >! 0; i--){
+
+        getline(readGuestbook, firstName, ',');
+        getline(readGuestbook, lastName, ',');
+        getline(readGuestbook, phoneNumber, '/');
+        GuestDataOutputString = firstName + " " + lastName + " " + phoneNumber + "\n";
+        outputGuestListBox->Append(_(GuestDataOutputString));
+        GuestDataOutputString = " ";
+}
+}
+
+//outputGuestListBox->Set("");
 }
 
 void HotelGuestBookingGuiDialog::OnaddGuestsButtonClick(wxCommandEvent& event)

@@ -19,7 +19,7 @@ class AddGuestDiag: public wxDialog
 		wxButton* BackToMainMenuButton;
 		wxButton* OkAddButton;
 		wxTextCtrl* FirstNameTextC;
-		wxTextCtrl* LastNameTextC;
+		wxTextCtrl* LastNAmeTextC;
 		wxTextCtrl* PhoneNumTextCntrl;
 		//*)
 

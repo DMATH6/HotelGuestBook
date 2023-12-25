@@ -52,6 +52,9 @@
 			</object>
 			<object class="sizeritem">
 				<object class="wxListBox" name="ID_LISTBOX1" variable="outputGuestListBox" member="yes">
+					<content>
+						<item>test</item>
+					</content>
 					<default>-1</default>
 					<size>465,386</size>
 				</object>

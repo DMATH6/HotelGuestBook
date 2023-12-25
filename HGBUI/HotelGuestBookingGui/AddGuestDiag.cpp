@@ -2,7 +2,12 @@
 #include "HotelGuestBookingGui/HotelGuestBookingGuiMain.h"
 #include <iostream>
 #include <vector>
-#include <fstream>
+#ifndef fstream_H
+#define fstream_H
+#endif
+
+
+//#include <fstream>
 #include <bits/stdc++.h>
 using namespace std;
 //extern vector < ClientData_c > ClientData_v; //Top level to cut down on complexity
@@ -36,8 +41,8 @@ AddGuestDiag::AddGuestDiag(wxWindow* parent,wxWindowID id,const wxPoint& pos,con
 	GridSizer1 = new wxGridSizer(5, 0, 0, 0);
 	FirstNameTextC = new wxTextCtrl(this, ID_TEXTCTRL1, _("Enter firstname"), wxDefaultPosition, wxSize(200,50), 0, wxDefaultValidator, _T("ID_TEXTCTRL1"));
 	GridSizer1->Add(FirstNameTextC, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-	LastNameTextC = new wxTextCtrl(this, ID_TEXTCTRL2, _("Enter last name"), wxDefaultPosition, wxSize(200,50), 0, wxDefaultValidator, _T("ID_TEXTCTRL2"));
-	GridSizer1->Add(LastNameTextC, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+	LastNAmeTextC = new wxTextCtrl(this, ID_TEXTCTRL2, _("Enter last name"), wxDefaultPosition, wxSize(200,50), 0, wxDefaultValidator, _T("ID_TEXTCTRL2"));
+	GridSizer1->Add(LastNAmeTextC, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
 	PhoneNumTextCntrl = new wxTextCtrl(this, ID_TEXTCTRL3, _("Enter phone number"), wxDefaultPosition, wxSize(200,50), 0, wxDefaultValidator, _T("ID_TEXTCTRL3"));
 	GridSizer1->Add(PhoneNumTextCntrl, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
 	OkAddButton = new wxButton(this, ID_BUTTON2, _("Add Guest"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON2"));
@@ -74,19 +79,19 @@ this->Close(true);
 
 void AddGuestDiag::OnOkAddButtonClick(wxCommandEvent& event)
 {
-    std::string firstNameStr = FirstNameTextC->GetValue().ToStdString();
-    std::string lastNameStr = LastNameTextC->GetValue().ToStdString();
-    std::string phoneNumStr = PhoneNumTextCntrl->GetValue().ToStdString();
+    string firstNameStr = FirstNameTextC->GetValue().ToStdString();
+    string lastNameStr = LastNAmeTextC->GetValue().ToStdString();
+    string phoneNumStr = PhoneNumTextCntrl->GetValue().ToStdString();
 char separator = ',';
 
     outGuestbook.open("guestBook.csv", fstream::app);
 
-    outGuestbook << firstNameStr << ','<<lastNameStr << ',' << phoneNumStr << endl;
+    outGuestbook << firstNameStr << ','<<lastNameStr << ',' << phoneNumStr << '/' << endl;
 
     outGuestbook.close();
 
     FirstNameTextC->Clear();
-    LastNameTextC->Clear();
+    LastNAmeTextC->Clear();
     PhoneNumTextCntrl->Clear();
 
 
